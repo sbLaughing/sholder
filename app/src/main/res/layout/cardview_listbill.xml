@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/image_month_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="八月"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="24dp">
+
+
+                <TextView
+                    android:id="@+id/card_resume_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="支出:2900"
+                    android:textColor="@color/my_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/card_income_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="收入:2900"
+                    android:textColor="@color/my_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="16dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="2dp"
+                    android:id="@+id/card_resume_count_tv"
+                    android:layout_width="wrap_content"
+                    android:text="共10笔"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="2dp"
+                    android:id="@+id/card_income_count_tv"
+                    android:layout_width="wrap_content"
+                    android:text="共90笔"
+                    android:textColor="@color/gray"
+                    android:layout_alignParentRight="true"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

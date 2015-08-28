@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navdrawer_width">300dp</dimen>
+    <dimen name="pie_chart_text1_size">16sp</dimen>
+    <dimen name="homepage_fragment_padding">20dp</dimen>
+    <dimen name="floatbtn_margin_right_dimen">15dp</dimen>
+    <dimen name="floatbtn_margin_bottom_dimen">20dp</dimen>
+
+</resources>

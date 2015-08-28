@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_editbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red_orange"
+
+        >
+
+        <ImageButton
+            android:layout_width="?attr/actionBarSize"
+            android:id="@+id/editbar_close"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:padding="8dp"
+            android:src="@mipmap/ic_close_white_36dp" />
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:id="@+id/editbar_check"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:padding="8dp"
+            android:src="@mipmap/ic_done_white_36dp" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增账单"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/red_orange"
+        android:layout_height="wrap_content">
+        <laughing.sholder.Widget.SlidingTabLayout
+            android:id="@+id/sliding_tabs_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <com.rey.material.widget.Switch
+            android:layout_centerVertical="true"
+            android:id="@+id/right_switch"
+            app:sw_thumbElevation="4dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            style="@style/Material.Widget.Switch"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/temp_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red_orange" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+</LinearLayout>

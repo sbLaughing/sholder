@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sholder</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">"Open"</string>
+    <string name="drawer_close">"Close"</string>
+
+    <string name="account_page_hint_remark">"备注"</string>
+
+    <string name="usetv_sheet_title">"类别"</string>
+
+    <string name="cancel">"取消"</string>
+    <string name="new_build">"新建"</string>
+    <string name="confirm">"确定"</string>
+</resources>

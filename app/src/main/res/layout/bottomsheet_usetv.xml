@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/bottomsheet_titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/usetv_sheet_title"
+            android:textColor="@color/material_default_color"
+            android:textSize="20sp" />
+
+        <laughing.sholder.Widget.RippleButton
+            android:id="@+id/bottomsheet_newbuildbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/trans2lightblack_bg_sel_c5"
+            android:paddingBottom="6dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="6dp"
+            android:text="@string/new_build"
+            android:textColor="@color/material_default_color"
+            android:textSize="15sp" />
+
+
+        <laughing.sholder.Widget.RippleButton
+            android:layout_marginRight="8dp"
+            android:id="@+id/bottomsheet_cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/bottomsheet_newbuildbtn"
+            android:background="@drawable/trans2lightblack_bg_sel_c5"
+            android:paddingBottom="6dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="6dp"
+            android:text="@string/cancel"
+            android:textColor="@color/light_gray"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>

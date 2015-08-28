@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/mainactivity_toolbar" />
+
+        <include layout="@layout/drawer_layout" />
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/float_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginRight="@dimen/floatbtn_margin_right_dimen"
+        android:gravity="center"
+        android:src="@mipmap/ic_edit_white"
+        app:fab_colorNormal="@color/red_orange"
+        app:fab_colorPressed="@color/red" />
+
+    <laughing.sholder.Widget.RevealLayout
+        android:id="@+id/reveal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_default_color" />
+    </laughing.sholder.Widget.RevealLayout>
+</FrameLayout>

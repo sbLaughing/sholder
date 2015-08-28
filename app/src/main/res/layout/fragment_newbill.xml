@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+
+        <laughing.sholder.Widget.ClearableEditText
+            android:drawablePadding="16dp"
+            android:drawableLeft="@mipmap/ic_attach_money_red_24dp"
+            android:id="@+id/money_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="left"
+            ripple:clear_et_cursor_auto_last="true"
+            ripple:clear_et_show_close="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="7"
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+
+            android:textColor="@color/my_text_color"
+            android:hint="0.0"
+            android:textColorHint="@color/light_gray"
+            android:drawableRight="@mipmap/darkclose_24"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/light_gray" />
+        
+        <laughing.sholder.Widget.ClearableEditText
+            android:inputType="textMultiLine"
+            android:id="@+id/remark_et"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="28"
+            ripple:clear_et_show_close="true"
+            ripple:clear_et_cursor_auto_last="false"
+            ripple:clear_et_show_ripple="true"
+            android:textColor="@color/gray"
+            android:hint="@string/account_page_hint_remark"
+            android:textColorHint="@color/light_gray"
+            android:padding="16dp"
+            />
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <laughing.sholder.Widget.RippleButton
+            android:drawablePadding="16dp"
+            android:drawableLeft="@mipmap/ic_bookmark_border_red_24dp"
+            android:id="@+id/use_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:padding="16dp"
+            android:textColor="@color/my_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/light_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+
+            >
+            <laughing.sholder.Widget.RippleButton
+                android:drawablePadding="16dp"
+                android:gravity="center|left"
+                android:drawableLeft="@mipmap/ic_event_available_red_24dp"
+                android:id="@+id/date_tv"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/my_text_color"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:background="@color/light_gray"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <laughing.sholder.Widget.RippleButton
+                android:drawableLeft="@mipmap/ic_access_time_red_24dp"
+                android:id="@+id/time_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/my_text_color"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/date_tv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/trans2darkgray_bg_sel"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="16dp"-->
+            <!--android:textColor="@color/my_text_color"-->
+            <!--android:textSize="16sp" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

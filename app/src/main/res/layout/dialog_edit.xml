@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rey.material.widget.EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Material.Widget.EditText.Light"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:padding="16dp"
+    app:et_helper="Enter"
+    android:textColor="@color/my_text_color"
+    app:et_dividerColor="@color/material_default_color"
+    app:et_dividerErrorColor="#FFFF0000"
+    app:et_supportTextErrorColor="#FFFF0000"
+    app:et_supportMaxChars="9"
+    app:et_supportMode="charCounter" />

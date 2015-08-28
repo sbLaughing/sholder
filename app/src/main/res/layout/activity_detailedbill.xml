@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <TextView
+        android:id="@+id/detail_acticity_month_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_view"
+        android:layout_alignRight="@+id/image_view"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_view">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
